@@ -24,8 +24,6 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    Platform: '$(buildPlatform)'
-    Configuration: '$(buildConfiguration)'
 
 - task: VSTest@2
   inputs:
