@@ -24,6 +24,12 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
+    Configuration: 'Release'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: $(System.DefaultWorkingDirectory)/x64/Release
+    artifactName: ConsoleApplication1
 
 - task: VSTest@2
   inputs:
