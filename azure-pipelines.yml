@@ -28,7 +28,7 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: $(System.DefaultWorkingDirectory)/x64/Release
+    targetPath: $(System.DefaultWorkingDirectory)/AzurePipelineTest/x64/Release/
     artifactName: ConsoleApplication1
 
 - task: VSTest@2
